@@ -28,3 +28,54 @@ The full version of this task: [Laravel hiring test](https://docs.google.com/doc
 <p align="center">
     <img src="https://images2.imgbox.com/af/7c/XMJcYKdQ_o.png" alt="welltrip_db">
 </p>
+
+### Installation
+
+- Clone the repository
+
+```
+https://github.com/dmshved/welltrip.git
+```
+
+- Copy `.env.example` file to `.env` and edit database credentials there
+
+```
+copy .env.example .env
+```
+
+- Install dependencies
+
+```
+composer install
+npm install
+```
+
+- Generate key
+
+```
+php artisan key:generate
+```
+
+- Run migrations
+
+```
+php artisan migrate
+```
+
+- Seed the database with test data (runs the roles seeding)
+
+```
+php artisan db:seed
+```
+
+- Run the application
+
+```
+php artisan serve 
+```
+
+- Create a user using artisan command
+
+```
+php artisan users:create 
+```
